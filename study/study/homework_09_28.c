@@ -12,35 +12,35 @@
 //}
 //int main()
 //{
-//	int volume = 0;//体积
-//	int radius = 10;//半径
+//	int volume = 0;//浣撶Н
+//	int radius = 10;//搴曢潰鍗婂緞
 //	float pi = 3.14;
-//	volume = (4.0f / 3.0f) * pi * radius * radius * radius;//计算体积
+//	volume = (4.0f / 3.0f) * pi * radius * radius * radius;//璁＄畻浣撶Н
 //	printf("%d\n", volume);
 //	return 0;
 //}
 //int main()
 //{
-//	int volume = 0;//体积
-//	int radius = 0;//半径
+//	int volume = 0;//浣撶Н
+//	int radius = 0;//搴曢潰鍗婂緞
 //	float pi = 3.14;
 //	printf("radius = ");
-//	scanf("%d", &radius);//输入半径
-//	volume = (4.0f / 3.0f) * 3.14 * radius * radius * radius;//计算体积
+//	scanf("%d", &radius);//杈撳叆鍗婂緞
+//	volume = (4.0f / 3.0f) * 3.14 * radius * radius * radius;//璁＄畻浣撶Н
 //	printf("%d\n", volume);
 //	return 0;
 //}
 //int main()
 //{
-//	double balance = 0;//余额
-//	double rate = 0;//利率
-//	double payment = 0;//还款金额
+//	double balance = 0;//浣欓
+//	double rate = 0;//鍒╃巼
+//	double payment = 0;//鏀嚭
 //	printf("Enter amount of loan:");
-//	scanf("%lf", &balance);//输入贷款金额20000.00
+//	scanf("%lf", &balance);//杈撳叆鍒濆浣欓20000.00
 //	printf("Enter interest rate:");
-//	scanf("%lf", &rate);//输入利率6.0
+//	scanf("%lf", &rate);//杈撳叆鍒╃巼6.0
 //	printf("Enter monthly payment:" );
-//	scanf("%lf", &payment);//输入还款金额386.66
+//	scanf("%lf", &payment);//杈撳叆鏀嚭386.66
 //	balance = (balance - payment) + balance * (rate / 100 / 12);
 //	printf("\nBalance remaining after first payment:%.2lf\n", balance);
 //	balance = (balance - payment) + balance * (rate / 100 / 12);
