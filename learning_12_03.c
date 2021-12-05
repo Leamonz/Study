@@ -34,30 +34,30 @@
 //	printf("%d\n", sizeof(s2));//16
 //	return 0;
 //}
-#include<stddef.h>
-struct s
-{
-	char c;
-	int i;
-	double d;
-};
+//#include<stddef.h>
+//struct s
+//{
+//	char c;
+//	int i;
+//	double d;
+//};
+////int main()
+////{
+////	printf("%d\n", offsetof(struct s, c));//0
+////	printf("%d\n", offsetof(struct s, i));//4
+////	printf("%d\n", offsetof(struct s, d));//8
+////	return 0;
+////}
+//struct A
+//{
+//	int a : 2;
+//	int b : 5;
+//	int c : 10;
+//	int d : 30;
+//};//定义一个位段
 //int main()
 //{
-//	printf("%d\n", offsetof(struct s, c));//0
-//	printf("%d\n", offsetof(struct s, i));//4
-//	printf("%d\n", offsetof(struct s, d));//8
+//	struct A s;
+//	printf("%d\n", sizeof(s));
 //	return 0;
 //}
-struct A
-{
-	int a : 2;
-	int b : 5;
-	int c : 10;
-	int d : 30;
-};//定义一个位段
-int main()
-{
-	struct A s;
-	printf("%d\n", sizeof(s));
-	return 0;
-}
