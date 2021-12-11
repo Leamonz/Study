@@ -77,6 +77,10 @@
 
 //#include<stdio.h>
 //int arr[1000][1000] = { 0 };
+//int min(int x, int y)
+//{
+//	return x < y ? x : y;
+//}
 //int main()
 //{
 //	int row = 0;
@@ -97,9 +101,10 @@
 //		}
 //		printf("\n");
 //	}
-//	if (col % 2 == 0)
+//	int ret = min(row, col);
+//	if (ret % 2 == 0)
 //	{
-//		for (int i = 0; i < col / 2; i++)
+//		for (int i = 0; i < ret / 2; i++)
 //		{
 //			for (int j = i; j < row - i; j++)
 //			{
@@ -119,9 +124,9 @@
 //			}
 //		}
 //	}
-//	else if (col % 2 == 1)
+//	else if (ret % 2 == 1)
 //	{
-//		for (int i = 0; i < (col + 1) / 2; i++)
+//		for (int i = 0; i < (ret + 1) / 2; i++)
 //		{
 //			for (int j = i; j < row - i; j++)
 //			{
@@ -200,41 +205,38 @@
 //int main()
 //{
 //	char ch = 0;
-//	do
+//	int n = 0;
+//	int m = 0;
+//	scanf("%d %d", &n, &m);
+//	ch = getchar();
+//	char str[100][100] = { 0 };
+//	for (int i = 0; i < m; i++)
 //	{
-//		int n = 0;
-//		int m = 0;
-//		scanf("%d %d", &n, &m);
+//		for (int j = 0; j < n; j++)
+//		{
+//			scanf("%c", &str[i][j]);
+//		}
 //		ch = getchar();
-//		char str[100][100] = { 0 };
-//		for (int i = 0; i < m; i++)
+//	}
+//	for (int i = 0; i < m; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < m - i - 1; j++)
 //		{
-//			for (int j = 0; j < n; j++)
+//			if (get_entropy(str[j]) > get_entropy(str[j + 1]))
 //			{
-//				scanf("%c", &str[i][j]);
-//			}
-//			ch = getchar();
-//		}
-//		for (int i = 0; i < m; i++)
-//		{
-//			int j = 0;
-//			for (j = 0; j < m - i - 1; j++)
-//			{
-//				if (get_entropy(str[j]) > get_entropy(str[j + 1]))
-//				{
-//					char tmp[100] = "";
-//					strcpy(tmp, str[j]);
-//					strcpy(str[j], str[j + 1]);
-//					strcpy(str[j + 1], tmp);
-//				}
+//				char tmp[100] = "";
+//				strcpy(tmp, str[j]);
+//				strcpy(str[j], str[j + 1]);
+//				strcpy(str[j + 1], tmp);
 //			}
 //		}
-//		for (int i = 0; i < m; i++)
-//		{
-//			printf("%s\n", str[i]);
-//		}
-//		printf("********************\n");
-//	} while ((ch = getchar()) != EOF);
+//	}
+//	for (int i = 0; i < m; i++)
+//	{
+//		printf("%s\n", str[i]);
+//	}
+//	printf("********************\n");
 //	return 0;
 //}
 // 
@@ -274,7 +276,7 @@
 //	int j = 0;
 //	int count = 0;
 //	int t = 0;
-//	for (j = 0; j < N - 1; j++)
+//	for (j = 0; j < N; j++)
 //	{
 //		for (int p = 1; p < N - j - 1; p++)
 //		{
@@ -290,8 +292,6 @@
 //					min = arr[k];
 //					count++;
 //				}
-//				else
-//					continue;
 //			}
 //			len[t] = count;
 //			t++;

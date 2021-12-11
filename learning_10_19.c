@@ -76,6 +76,6 @@
 //int main()
 //{
 //	char i = 'A';
-//	printf("%c\n", i + 32);
+//	printf("%c\n", i + 32);//´òÓ¡a
 //	return 0;
 //}
