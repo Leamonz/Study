@@ -180,31 +180,41 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-int ache[10000] = { 0 };
-int main()
-{
-	int n, m;
-	scanf("%d%d", &n, &m);
-	for (int i = 0; i < n; i++)
-	{
-		scanf("%d", &ache[i]);
-	}
-	int min = 0;
-	for (int i = 0; i < m; i++)
-	{
-		min += ache[i];
-	}
-	for (int i = 1; i <= n - m; i++)
-	{
-		int sum = 0;
-		for (int j = i; j < i + m; j++)
-		{
-			sum += ache[j];
-		}
-		if (min > sum)
-			min = sum;
-	}
-	printf("%d\n", min);
-	return 0;
-}
+//#include<stdio.h>
+//int ache[10000] = { 0 };
+//int main()
+//{
+//	int n, m;
+//	scanf("%d%d", &n, &m);
+//	for (int i = 0; i < n; i++)
+//	{
+//		scanf("%d", &ache[i]);
+//	}
+//	int min = 0;
+//	for (int i = 0; i < m; i++)
+//	{
+//		min += ache[i];
+//	}
+//	for (int i = 1; i <= n - m; i++)
+//	{
+//		int sum = 0;
+//		for (int j = i; j < i + m; j++)
+//		{
+//			sum += ache[j];
+//		}
+//		if (min > sum)
+//			min = sum;
+//	}
+//	printf("%d\n", min);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	char str[4] = { 0 };
+//	char* p1 = str;
+//	char* p2 = &str;
+//	printf("%p %p\n%p %p\n", p1, p2, str + 1, &str + 1);
+//	return 0;
+//}
